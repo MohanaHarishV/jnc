@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+  <launch>
+  <include file="$(find-pkg-share gazebo_ros)/launch/empty_world.launch">
+    <let name="world_name"   value="$(find-pkg-share sim_pkg)/worlds/world_with_separators.world"/>
+    <let name="paused"       value="false"/>    
+    <let name="use_sim_time" value="true"/>
+    <let name="debug"        value="false"/>
+    <let name="gui"          value="false"/>
+  </include>
+ 
+  <node pkg="sim_pkg" exec="delay.sh" args="5 sim_pkg car_rec.launch" name="car_rec" output="screen"/>
+  </launch>
