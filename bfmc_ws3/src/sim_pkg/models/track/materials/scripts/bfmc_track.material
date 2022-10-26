@@ -1,0 +1,13 @@
+material BFMC_MATERIAL
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+			{
+ 				texture 2021_Medium.png
+			}
+    }
+  }
+}
