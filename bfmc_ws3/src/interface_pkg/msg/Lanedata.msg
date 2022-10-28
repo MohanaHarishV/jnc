@@ -1,0 +1,2 @@
+float32 perpendicular_distance
+float32 curvature
